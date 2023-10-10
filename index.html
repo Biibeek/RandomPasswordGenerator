@@ -24,7 +24,7 @@
             const number="1234567890";
             const symbol="!@#$%^&*()-=_+[]{}\/?><";
             const allChars=upperCase + lowerCase + number + symbol;
-
+//function for creating password
             function createPassword(){
                 let password="";
                 password += upperCase[Math.floor(Math.random()*upperCase.length)];
@@ -37,6 +37,7 @@
                 }
                 passwordBox.value=password;
             }
+            //function for copying the generated password
             function copyPassword(){
                 passwordBox.select();
                 document.execCommand("copy");
